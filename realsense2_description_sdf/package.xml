@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>realsense2_description_sdf</name>
+  <version>2.3.2</version>
+  <description>RealSense Camera description package for Intel 3D D400 cameras</description>
+  <maintainer email="willkode@outlook.com">Troi Williams</maintainer>
+  <license>MIT</license>
+
+  <url type="website">https://github.com/troiwill/realsense-ros-sdf</url>
+  <url type="bugtracker">https://github.com/troiwill/realsense-ros-sdf/issues</url>
+
+  <author email="vsanjay@terpmail.umd.edu">Vaibhav Sanjay</author>
+  <author email="willkode@outlook.com">Troi Williams</author>
+
+  <exec_depend>realsense2_camera</exec_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <!-- <test_depend>rosunit</test_depend> -->
+
+  <export>
+    <gazebo_ros
+      gazebo_model_path="${prefix}/models" /> 
+  </export>
+</package>
