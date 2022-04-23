@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>realsense2_description_sdf</name>
-  <version>2.3.2</version>
+  <version>0.0.1</version>
   <description>RealSense Camera description package for Intel 3D D400 cameras</description>
   <maintainer email="willkode@outlook.com">Troi Williams</maintainer>
   <license>MIT</license>
@@ -12,12 +12,17 @@
   <author email="vsanjay@terpmail.umd.edu">Vaibhav Sanjay</author>
   <author email="willkode@outlook.com">Troi Williams</author>
 
+  <build_depend>gazebo_ros</build_depend>
+  <build_export_depend>gazebo_ros</build_export_depend>
+  <exec_depend>gazebo_ros</exec_depend>
   <exec_depend>realsense2_camera</exec_depend>
   <buildtool_depend>catkin</buildtool_depend>
   <!-- <test_depend>rosunit</test_depend> -->
 
   <export>
     <gazebo_ros
-      gazebo_model_path="${prefix}/models" /> 
+      gazebo_media_path="${prefix}"
+      gazebo_model_path="${prefix}/models"
+      /> 
   </export>
 </package>

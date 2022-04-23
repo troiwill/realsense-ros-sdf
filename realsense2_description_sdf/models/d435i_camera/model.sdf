@@ -1,5 +1,6 @@
+<?xml version="1.0"?>
 <sdf version='1.6'>
-  <model name='d435_camera'>
+  <model name='d435i_camera'>
     <link name='base_link'>
       <pose frame=''>0 0 0 0 -0 0</pose>
       <inertial>
@@ -41,7 +42,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://realsense2_description_sdf/meshes/d435.dae</uri>
+            <uri>../meshes/d435.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -169,7 +170,7 @@
       <infrared2OpticalframeName>camera_right_ir_optical_frame</infrared2OpticalframeName>
       <rangeMinDepth>0.2</rangeMinDepth>
       <rangeMaxDepth>10.0</rangeMaxDepth>
-      <pointCloud>1</pointCloud>
+      <pointCloud>0</pointCloud>
       <pointCloudTopicName>depth/color/points</pointCloudTopicName>
       <pointCloudCutoff>0.25</pointCloudCutoff>
       <pointCloudCutoffMax>9.0</pointCloudCutoffMax>
