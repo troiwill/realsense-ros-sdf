@@ -19,7 +19,7 @@ cd realsense-ros-sdf
 
 Finally, add the models to your catkin workspace. To add the models to your catkin workspace, you can either use a symbolic link (option 1) or copy the description directory directly (option 2).
 
-**Option 1:**
+**Option 1: (Recommended)**
 ```
 cd ${HOME}/catkin_ws/src
 ln -s ${HOME}/repos/realsense-ros-sdf/realsense2_description_sdf realsense2_description_sdf
