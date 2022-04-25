@@ -3,10 +3,17 @@ ROS package for SDF versions of the RealSense camera models. We tested the follo
 
 ## Installation
 
-Install the Intel RealSense libraries and description.
+Install the Intel RealSense camera description.
 ```
-sudo apt install ros-melodic-realsense2-camera
 sudo apt install ros-melodic-realsense2-description
+```
+
+Clone the realsense gazebo plugin repository and create a link to it.
+```
+mkdir -p ${HOME}/repos && cd ${HOME}/repos
+git clone https://github.com/troiwill/realsense_gazebo_plugin
+cd ${HOME}/catkin_ws/src
+ln -s ${HOME}/repos/realsense_gazebo_plugin realsense_gazebo_plugin
 ```
 
 Clone this repository.
@@ -31,4 +38,8 @@ cd ${HOME}/catkin_ws/src
 cp -r ${HOME}/repos/realsense-ros-sdf/realsense2_description_sdf .
 ```
 
-Now, run `catkin build` in the root workspace directory (i.e., `${HOME}/catkin_ws`).
+After either option, run `catkin build` in the root workspace directory (i.e., `${HOME}/catkin_ws`).
+```
+${HOME}/catkin_ws
+catkin build
+```
