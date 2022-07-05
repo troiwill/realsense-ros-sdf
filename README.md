@@ -40,6 +40,6 @@ cp -r ${HOME}/repos/realsense-ros-sdf/realsense2_description_sdf .
 
 After either option, run `catkin build` in the root workspace directory (i.e., `${HOME}/catkin_ws`).
 ```
-${HOME}/catkin_ws
+cd ${HOME}/catkin_ws
 catkin build
 ```
